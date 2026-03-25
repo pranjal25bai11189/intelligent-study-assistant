@@ -1,4 +1,6 @@
 import pickle
+from rules import give_advice
+
 
 # Load model
 model, le_time, le_mood = pickle.load(open("model.pkl", "rb"))
@@ -21,3 +23,5 @@ prob = model.predict_proba([[sleep, study, time_encoded, mood_encoded]])[0][pred
 print("\n--- RESULT ---")
 print("Focus Prediction:", "High" if prediction == 1 else "Low")
 print("Confidence:", round(prob * 100, 2), "%")
+advice = give_advice(prediction, sleep, time)
+print("Advice:", advice)
