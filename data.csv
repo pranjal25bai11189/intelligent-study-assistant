@@ -1,0 +1,11 @@
+sleep_hours	study_hours	time_of_day	mood	focus
+6	2	afternoon	tired	0
+8	3	morning	fresh	1
+5	1	night	tired	0
+7	2	evening	normal	1
+6	3	afternoon	normal	0
+8	4	morning	fresh	1
+5	2	night	tired	0
+7	3	evening	normal	1
+6	2	afternoon	tired	0
+8	3	morning	fresh	1
