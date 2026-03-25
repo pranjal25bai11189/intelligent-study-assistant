@@ -1,4 +1,5 @@
 import pickle
+import pandas as pd
 from rules import give_advice
 
 
@@ -16,8 +17,10 @@ time_encoded = le_time.transform([time])[0]
 mood_encoded = le_mood.transform([mood])[0]
 
 # Predict
-prediction = model.predict([[sleep, study, time_encoded, mood_encoded]])[0]
-prob = model.predict_proba([[sleep, study, time_encoded, mood_encoded]])[0][prediction]
+input_data = pd.DataFrame([[sleep, study, time_encoded, mood_encoded]],
+                          columns=['sleep_hours', 'study_hours', 'time_of_day', 'mood'])
+prediction = model.predict(input_data)[0]
+prob = model.predict_proba(input_data)[0][prediction]
 
 # Output
 print("\n--- RESULT ---")
