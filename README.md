@@ -50,11 +50,6 @@ pip install pandas scikit-learn
 ### Step 1: Open Command Prompt
 
 Open Command Prompt and navigate to the project folder:
-## ▶️ How to Run
-
-### Step 1: Open Command Prompt
-
-Open Command Prompt and navigate to the project folder:
 cd Desktop
 cd intelligent-study-assistant
 
