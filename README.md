@@ -32,20 +32,41 @@ Students often struggle with maintaining focus while studying. This project aims
 3. User inputs conditions
 4. Model predicts focus
 5. Rule-based system gives advice
-
 ---
 
+## 🛠️ Requirements
+
+Make sure the following are installed on your system:
+
+- Python 3.x
+- pip (Python package manager)
+
+Install the required libraries using the following command in Command Prompt:
+pip install pandas scikit-learn
+
+---
 ## ▶️ How to Run
 
-### Step 1: Train Model
-```
-python train_model.py
-```
+### Step 1: Open Command Prompt
 
-### Step 2: Run Prediction
-```
+Open Command Prompt and navigate to the project folder:
+## ▶️ How to Run
+
+### Step 1: Open Command Prompt
+
+Open Command Prompt and navigate to the project folder:
+cd Desktop
+cd intelligent-study-assistant
+
+### Step 2: Train Model
+
+Run the following command to train the model:
+python train_model.py
+
+### Step 3: Run Prediction
+
+Run the following command to start the prediction system:
 python predict.py
-```
 ---
 
 ## 📌 Example
